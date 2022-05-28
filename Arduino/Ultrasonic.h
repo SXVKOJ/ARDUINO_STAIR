@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Arduino.h"
+
 #ifndef ULTRASONIC_H_
 #define ULTRASONIC_H_
 

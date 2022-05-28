@@ -1,6 +1,8 @@
 #include "Ultrasonic.h"
 #include "Adafruit_NeoPixel.h"
 
+#include "Arduino.h"
+
 // === настройки, которые можно поменять === //
 
 #define LESENKA 17    // количество ступеней на лесенке
