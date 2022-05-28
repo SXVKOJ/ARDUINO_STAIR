@@ -9,13 +9,13 @@ Ultrasonic::Ultrasonic(const int& trigger_pin, const int& echo_pin) {
 }
 
 long Ultrasonic::timing() {
-	digitalWrite(trigger_pin, LOW);
+	digitalWrite(this->trigger_pin, LOW);
 	delayMicroseconds(30);
 
-	digitalWrite(trigger_pin, HIGH);
+	digitalWrite(this->trigger_pin, HIGH);
 	delayMicroseconds(60);
 
-	digitalWrite(trigger_pin, LOW);
+	digitalWrite(this->trigger_pin, LOW);
 
 	const long duration = pulseIn(echo_pin, HIGH);
 
