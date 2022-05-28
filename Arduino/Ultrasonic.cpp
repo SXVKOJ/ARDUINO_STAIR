@@ -22,7 +22,7 @@ long Ultrasonic::timing() {
 	return duration;
 }
 
-long Ultrasonic::duration(const int& sys) {
+long Ultrasonic::ranging(const int& sys) {
 	const long duration = timing();
 
 	const long distance_cm = duration / 58;
