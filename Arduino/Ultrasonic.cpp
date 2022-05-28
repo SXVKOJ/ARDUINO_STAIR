@@ -1,6 +1,6 @@
 #include "Ultrasonic.h"
 
-Ultrasonic::Ultrasonic(const int &trigger_pin, const int &echo_pin) {
+Ultrasonic::Ultrasonic(const int& trigger_pin, const int& echo_pin) {
 	pinMode(trigger_pin, OUTPUT);
 	pinMode(echo_pin, INPUT);
 
@@ -14,9 +14,9 @@ long Ultrasonic::timing() {
 
 	digitalWrite(trigger_pin, HIGH);
 	delayMicroseconds(60);
-	
+
 	digitalWrite(trigger_pin, LOW);
-	
+
 	const long duration = pulseIn(echo_pin, HIGH);
 
 	return duration;
@@ -30,9 +30,11 @@ long Ultrasonic::ranging(const int& sys) {
 
 	if (sys == 1) {
 		return distance_cm;
-	} else if (sys == 2) {
+	}
+	else if (sys == 2) {
 		return distance_in;
-	} else {
+	}
+	else {
 		return -1;
 	}
 }

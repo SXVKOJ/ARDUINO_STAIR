@@ -15,8 +15,8 @@
 #define DIST1 50      // рассто€ние срабатывани€ 1 датчика
 #define DIST2 50      // рассто€ние срабатывани€ 2 датчика
 
-#define CM  1 // Ultrasonic сантиметры
-#define INC 2 // Ultrasonic дюймы
+#define CM  1         // Ultrasonic: измерение в сантиметрах
+#define INC 2         // Ultrasonic: измерение в дюймах
 
 // === настройки, которые можно помен€ть === // 
 
@@ -34,7 +34,7 @@ void setup() {
     strip.show();                              // отключаем все пиксели на ленте
     strip.setBrightness(BRIGHT);               // указываем €ркость (максимум 255)
     Serial.begin(9600);
-    pinMode(PIN_VKL, INPUT);  // инициализируем пин дл€ включател€
+    pinMode(PIN_VKL, INPUT);                   // инициализируем пин дл€ включател€
 }
 
 // узнаем рассто€ние с 1 датчика
