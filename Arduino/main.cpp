@@ -15,6 +15,9 @@
 #define DIST1 50      // расстояние срабатывания 1 датчика
 #define DIST2 50      // расстояние срабатывания 2 датчика
 
+#define CM  1 // Ultrasonic сантиметры
+#define INC 2 // Ultrasonic дюймы
+
 // === настройки, которые можно поменять === // 
 
 Ultrasonic ultrasonic1(0, 1);   //Trig - 0, Echo - 1
